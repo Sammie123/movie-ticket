@@ -21,3 +21,44 @@
 #roughnightClick {
   display: none;
 }
+
+#wonderWomanTime {
+  display: none;
+}
+#cars3Time {
+  display: none;
+}
+#roughNightTime {
+  display: none;
+}
+#transformerTime {
+  display: none;
+}
+
+.veteran {
+  display: none;
+}
+
+.discount {
+  display: none;
+}
+
+.form-control {
+  display: none;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.totalCost {
+  display: none;
+}
+
+.btn {
+  display: none;
+}
+
+#cost {
+  display: none;
+}

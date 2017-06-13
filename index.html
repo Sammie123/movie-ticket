@@ -8,6 +8,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Welcome to J and L Theater Center</h1>
+      </div>
       <div class="row">
         <div class="col-md-12">
           <div id="underSeventeen">
@@ -150,43 +153,73 @@
             </div>
           </div>
 
-          <form class="totalCost">
-            <div class="form-group">
-              <label for="name">Full Name:</label>
-              <input id="name" type="text" class="form-control">
-            </div>
-          </form>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="movieName" value="WonderWoman">
-              Wonder Woman
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="movieName" value="Cars3">
-              Cars 3
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="movieName" value="Transformer">
-              Transformer
-            </label>
-          </div>
-
-          <div class="radio">
-            <label>
-              <input type="radio" name="movieName" value="RoughNight">
-              Rough Night
-            </label>
-          </div>
-
-
+      <form class="totalCost">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input id="name" type="text" class="form-control">
         </div>
+
+        <h2 class="veteran">Are you a Veteran?</h2>
+        <select class="form-control" id="veteran">
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+
+        <h2 class="discount">Are you over the age of 55?</h2>
+        <select class="form-control" id="discount">
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+        </select>
+        <br>
+        <br>
+
+        <select class="form-control" id="transformerTime">
+          <option value 1>9:00am</option>
+          <option value 2>11:00am</option>
+          <option value 3>12:00pm</option>
+          <option value 4>2:00pm</option>
+          <option value 5>4:30pm</option>
+          <option value 6>6:40pm</option>
+          <option value 7>9:00pm</option>
+        </select>
+
+        <select class="form-control" id="cars3Time">
+          <option value 1>9:30am</option>
+          <option value 2>11:30am</option>
+          <option value 3>12:30pm</option>
+          <option value 4>2:30pm</option>
+          <option value 5>5:00pm</option>
+          <option value 6>7:10pm</option>
+          <option value 7>9:30pm</option>
+        </select>
+
+        <select class="form-control" id="wonderWomanTime">
+          <option value 1>10:00am</option>
+          <option value 2>12:00pm</option>
+          <option value 3>1:00pm</option>
+          <option value 4>3:30pm</option>
+          <option value 5>5:30pm</option>
+          <option value 6>7:40pm</option>
+          <option value 7>10:00pm</option>
+        </select>
+
+        <select class="form-control" id="roughNightTime">
+          <option value 1>11:00am</option>
+          <option value 2>12:00pm</option>
+          <option value 3>3:00pm</option>
+          <option value 4>4:00pm</option>
+          <option value 5>7:30pm</option>
+          <option value 6>9:40pm</option>
+          <option value 7>11:00pm</option>
+        </select>
+        <br>
+        <br>
+        <button type="submit" class="btn">Purchase</button>
+      </form>
+
+      <div id="cost">
+        <h2>Final Cost</h2>
+        <p>Hello <span id="name"></span> !</p>
       </div>
     </div>
   </body>
